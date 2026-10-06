@@ -1,0 +1,142 @@
+/* Stil general */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+background-color: #f5f5f5;
+color: #333;
+}
+
+/* Antet */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+background-color: #5b3fd9;
+color: white;
+}
+
+header h1 {
+margin: 0;
+}
+
+nav {
+display: flex;
+gap: 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* Secțiuni */
+section {
+padding: 40px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+h2 {
+margin-bottom: 25px;
+}
+
+/* Destinații - Grid */
+#destinatii {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+}
+
+/* Titlul secțiunii ocupă toată lățimea */
+#destinatii h2 {
+grid-column: 1 / -1;
+}
+
+/* Cardurile */
+article {
+background-color: white;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 10px;
+}
+
+article:hover {
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Destinația evidențiată */
+article.featured {
+border: 2px solid #5b3fd9;
+background-color: #eeeaff;
+}
+
+/* Formular */
+form {
+background-color: white;
+padding: 25px;
+border-radius: 10px;
+max-width: 600px;
+margin: 0 auto;
+}
+
+form div {
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+}
+
+label {
+margin-bottom: 6px;
+font-weight: bold;
+}
+
+input,
+select {
+width: 100%;
+box-sizing: border-box;
+padding: 10px;
+border: 1px solid #bbb;
+border-radius: 5px;
+font-size: 16px;
+}
+
+input:focus,
+select:focus {
+outline: 2px solid #5b3fd9;
+}
+
+button {
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+background-color: #5b3fd9;
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #4930b5;
+}
+
+/* Recomandări */
+#recomandari {
+background-color: white;
+margin-top: 20px;
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px;
+background-color: #333;
+color: white;
+margin-top: 20px;
+}
